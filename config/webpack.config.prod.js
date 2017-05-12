@@ -111,7 +111,8 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
-          /\.svg$/
+          /\.svg$/,
+			/\.styl$/
         ],
         loader: 'url',
         query: {
@@ -126,6 +127,11 @@ module.exports = {
         loader: 'babel',
         
       },
+		{
+			test: /\.styl$/,
+			include: paths.appSrc,
+			loaders: ['style','css','stylus']
+		},
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.

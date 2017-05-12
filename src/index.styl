@@ -1,3 +1,28 @@
 @import "style-reset.styl"
 @import "variables.styl"
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300')
+
+h1,h2,h3,h4,h5,h6
+	font-family: MAJOR-FONT
+
+	&>small
+		font-family: SUB-FONT
+
+body, p
+	font-family: SUB-FONT
+
+.row
+	&:after,&:before
+		content ''
+		display table
+		clear both
+
+main
+	width 80%
+	float left
+
+
+.aside
+	width 20%
+	float left

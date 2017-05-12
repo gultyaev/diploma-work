@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 
-import Router from '../Router';
-
 //UI
-import { Header } from '../UI'
+import { Header, Footer, AsideNav } from '../UI'
 
 class App extends Component {
   render() {
     return (
 		<div>
 			<Header/>
-			<hr/>
-			<Router/>
+			<div className="row">
+				<AsideNav/>
+				<main>
+					{this.props.children}
+				</main>
+			</div>
+			<Footer/>
 		</div>
     );
   }

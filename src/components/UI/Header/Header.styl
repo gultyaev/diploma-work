@@ -1,23 +1,44 @@
-@import "../../../variables.styl";
+@import "../../../variables.styl"
 
 .header
-	color BLUE
+	color COMMON-TEXT-COLOR
 	font-size 0
 	height 100px
 	width 100%
 	background-image linear-gradient(to left, YELLOW, WHITE 75%)
 
+	&:after, &:before
+		content ''
+		display table
+		clear both
+
 .header-logo
+	float left
 	width 150px
 	height 80px
-	background BLUE
+	background COMMON-BACKGROUND
 	display inline-block
 	border 2px solid BLACK
 	margin-top 10px
 	margin-left 50px
 
 .header--text
+	float right
 	display inline-block
-	font-size 1rem
+	font-size 3rem
 	height 100%
 	line-height 100px
+	vertical-align top
+	margin-right 50px
+	font-family: 'Josefin Slab', serif
+	padding-right 100px
+	position relative
+
+	&:before
+		content ''
+		display block
+		position absolute
+		right 0
+		width 100px
+		height 100%
+		background-image url('../../../img/sub-logo.svg')

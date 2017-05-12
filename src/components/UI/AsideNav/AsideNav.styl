@@ -1,0 +1,31 @@
+@import "../../../variables.styl"
+
+.aside
+	background-color YELLOW
+	user-select none
+	font-family MAJOR-FONT
+
+.aside input
+	display none
+
+.aside input:checked + label
+	background-color darken(YELLOW, 20%)
+
+.aside-nav--item, .aside li
+	display block
+	cursor pointer
+
+	padding 5px
+	letter-spacing 0.025em
+
+	&:hover
+		background-color lighten(YELLOW, 50%)
+
+.aside input + label + ul
+	display none
+	height 0
+	transition 0.3s
+
+.aside input:checked + label + ul
+	display block
+	height 100px
