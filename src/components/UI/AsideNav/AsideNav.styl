@@ -1,9 +1,23 @@
 @import "../../../variables.styl"
 
-.aside
+.aside--list-groups
 	background-color YELLOW
 	user-select none
 	font-family MAJOR-FONT
+	box-shadow 2px 2px 3px 0 lighten(BLACK, 80%)
+
+.aside
+	a
+		display block
+		padding 10px
+		&:hover
+			color red
+			text-decoration underline
+
+	&--item
+		display block
+		font-family MAJOR-FONT
+		color COMMON-TEXT-COLOR
 
 .aside input
 	display none
@@ -11,15 +25,38 @@
 .aside input:checked + label
 	background-color darken(YELLOW, 20%)
 
+.aside-nav--item
+	border-top 1px dashed BLACK
+	padding 10px
+
+	&:first-of-type
+		border-top 0
+
 .aside-nav--item, .aside li
 	display block
 	cursor pointer
 
-	padding 5px
 	letter-spacing 0.025em
 
 	&:hover
 		background-color lighten(YELLOW, 50%)
+
+
+.aside-nav--item
+	position relative
+	padding-left 15px
+	&:before
+		content '\f105'
+		display block
+		width 15px
+		height 15px
+		line-height 15px
+		font-family FontAwesome
+		position absolute
+		text-align center
+		left 0
+		transition transform 0.1s ease
+
 
 .aside input + label + ul
 	display none
@@ -28,4 +65,8 @@
 
 .aside input:checked + label + ul
 	display block
-	height 100px
+	height auto
+
+.aside input:checked + label
+	&:before
+		transform rotate(90deg)

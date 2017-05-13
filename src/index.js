@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import Index from './components/Pages/Main';
 import About from './components/Pages/About';
+import Error404 from './components/Pages/Error404';
 
 import './index.styl';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
 		<Route path="/" component={App}>
 			<IndexRoute component={Index}/>
 			<Route path="о-нас" component={About}/>
+			<Route path="*" component={Error404}/>
 		</Route>
 	</Router> ,
   document.getElementById('root')

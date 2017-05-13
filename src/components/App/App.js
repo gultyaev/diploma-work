@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //UI
-import { Header, Footer, AsideNav } from '../UI'
+import { Header, Footer, AsideNav, Aside } from '../UI'
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
 				<main>
 					{this.props.children}
 				</main>
+				<Aside/>
 			</div>
 			<Footer/>
 		</div>

@@ -3,30 +3,38 @@
 .footer
 	height 120px
 	width 100%
-	border-top 2px solid BLACK
+	border-top 1px solid lighten(BLACK, 70%)
+	padding-top 10px
+	font-size 0
+	&--links
+		width 50%
+		display inline-block
 
 .footer--col1
 	padding-left 50px
 	width 50%
 	float left
+	font-size 1rem
 
 .footer--col2
 	width 50%
 	float left
 	text-align center
 	line-height 120px
-	font-size 1.5em
+	font-size 1.5rem
 
 .footer--link-item
-	line-height 1.5em
+	line-height 1.5rem
 	transition color 0.2s ease
 
+	&:link
+		color COMMON-TEXT-COLOR
 	&:visited
-		color BLUE
+		color rebeccapurple
 	&:hover
 		color red
 	&:active
-		color rebeccapurple
+		color yellow
 
 	&.active
 		text-decoration underline

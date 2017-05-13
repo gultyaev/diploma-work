@@ -8,11 +8,16 @@ const Footer = () => {
 			<div className="row">
 				<div className="footer--col1">
 					<ul className="footer--links">
-						<li><Link activeClassName="active" className="footer--link-item" to="/">Главная</Link></li>
 						<li><Link activeClassName="active" className="footer--link-item" to="о-нас">О нас</Link></li>
 						<li><Link activeClassName="active" className="footer--link-item" to="заказать-чёткий-депозит">Заказать чёткий депозит</Link></li>
 						<li><Link activeClassName="active" className="footer--link-item" to="инфа">Почитать инфу</Link></li>
 						<li><Link activeClassName="active" className="footer--link-item" to="кредит">Стрельнуть купонов</Link></li>
+					</ul>
+					<ul className="footer--links">
+						<li><Link activeClassName="active" className="footer--link-item" to="акции">Акции дня</Link></li>
+						<li><Link activeClassName="active" className="footer--link-item" to="кросы">Кросы</Link></li>
+						<li><Link activeClassName="active" className="footer--link-item" to="сиги">Сиги дешево</Link></li>
+						<li><Link activeClassName="active" className="footer--link-item" to="бонусы">Программа бонусов</Link></li>
 					</ul>
 				</div>
 				<div className="footer--col2">
