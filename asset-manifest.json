@@ -1,11 +1,15 @@
 {
   "main.css": "static/css/main.e50ef304.css",
   "main.css.map": "static/css/main.e50ef304.css.map",
-  "main.js": "static/js/main.869d0090.js",
-  "main.js.map": "static/js/main.869d0090.js.map",
+  "main.js": "static/js/main.ec6d1c23.js",
+  "main.js.map": "static/js/main.ec6d1c23.js.map",
+  "static\\media\\elephant.jpg": "static/media/elephant.09d2f6dc.jpg",
   "static\\media\\fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
   "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
+  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
+  "static\\media\\fox.jpg": "static/media/fox.445a0e7e.jpg",
+  "static\\media\\maintains.jpg": "static/media/maintains.17d17f4f.jpg",
+  "static\\media\\scenery1.jpg": "static/media/scenery1.32465ee8.jpg"
 }
